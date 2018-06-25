@@ -11,6 +11,8 @@ function readyNow() {
 
 function addEventListeners() {
     $('#genButton').on('click', handleGenerate);
+    $('#boxZone').on('click', '.swapBtn', handleSwap);
+    $('#boxZone').on('click', '.deleteBtn', handleDelete);
 }
 
 function handleGenerate () {
@@ -21,4 +23,12 @@ function handleGenerate () {
     $box.append('<button class="swapBtn">Swap</button>');
     $box.append('<button class="deleteBtn">Delete</button>');
     $('#boxZone').append($box);
+}
+
+function handleSwap() {
+    console.log('swapped!');
+}
+
+function handleDelete() {
+    console.log('deleted!');   
 }
