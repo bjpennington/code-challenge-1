@@ -1,5 +1,7 @@
 console.log('js');
 
+let buttonCounter = 0;
+
 $(readyNow);
 
 function readyNow() {
@@ -13,5 +15,8 @@ function addEventListeners() {
 
 function handleGenerate () {
     console.log('You clicked it!');
-    $('#boxZone').append('<div class="box"><div>')
+    buttonCounter++;
+    let $box = $('<div class="box"><div>');
+    $box.append(`<p>${buttonCounter}</p>`);
+    $('#boxZone').append($box);
 }
