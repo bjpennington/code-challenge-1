@@ -1,12 +1,15 @@
 .box {
-    margin: 5px;
-    height: 50px;
+    margin: 15px;
+    padding: 5px;
+    height: 75px;
 }
 
 .red {
     background-color: red;
+    color: white;
 }
 
 .yellow {
     background-color: yellow;
+    color: black;
 }
