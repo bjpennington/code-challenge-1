@@ -15,7 +15,7 @@ function addEventListeners() {
     $('#boxZone').on('click', '.deleteBtn', handleDelete);
 }
 
-function handleGenerate () {
+function handleGenerate() {
     //increase button click count
     buttonCounter++;
 
@@ -40,7 +40,7 @@ function handleSwap() {
     $(this).closest('div').toggleClass("red yellow");
 }
 
-function handleDelete() { 
+function handleDelete() {
     // remove box div delete button belongs to
-    $(this).closest('div').remove();  
+    $(this).closest('div').remove();
 }
