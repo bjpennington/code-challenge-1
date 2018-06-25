@@ -31,5 +31,6 @@ function handleSwap() {
 }
 
 function handleDelete() {
-    console.log('deleted!');   
+    console.log('deleted!'); 
+    $(this).closest('div').remove();  
 }
