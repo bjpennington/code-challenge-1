@@ -13,4 +13,5 @@ function addEventListeners() {
 
 function handleGenerate () {
     console.log('You clicked it!');
+    $('#boxZone').append('<div class="box"><div>')
 }
