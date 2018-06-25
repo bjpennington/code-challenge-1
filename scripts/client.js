@@ -18,7 +18,7 @@ function addEventListeners() {
 function handleGenerate () {
     console.log('You clicked it!');
     buttonCounter++;
-    let $box = $('<div class="box"><div>');
+    let $box = $('<div class="box red"><div>');
     $box.append(`<p>${buttonCounter}</p>`);
     $box.append('<button class="swapBtn">Swap</button>');
     $box.append('<button class="deleteBtn">Delete</button>');
@@ -27,6 +27,7 @@ function handleGenerate () {
 
 function handleSwap() {
     console.log('swapped!');
+    $(this).closest('div').toggleClass("red yellow");
 }
 
 function handleDelete() {
