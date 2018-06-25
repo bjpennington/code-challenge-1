@@ -18,5 +18,7 @@ function handleGenerate () {
     buttonCounter++;
     let $box = $('<div class="box"><div>');
     $box.append(`<p>${buttonCounter}</p>`);
+    $box.append('<button class="swapBtn">Swap</button>');
+    $box.append('<button class="deleteBtn">Delete</button>');
     $('#boxZone').append($box);
 }
